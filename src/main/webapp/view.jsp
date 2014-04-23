@@ -27,6 +27,8 @@ String successURL = portletPreferences.getValue("successURL", StringPool.BLANK);
 	<portlet:param name="<%= ActionRequest.ACTION_NAME %>" value="saveData" />
 </portlet:actionURL>
 
+<h1>Hello world!</h1>
+
 <aui:form action="<%= saveDataURL %>" method="post" name="fm">
 	<c:if test="<%= Validator.isNull(successURL) %>">
 		<aui:input name="redirect" type="hidden" value="<%= currentURL %>" />
@@ -141,7 +143,7 @@ String successURL = portletPreferences.getValue("successURL", StringPool.BLANK);
 			<liferay-ui:captcha url="<%= captchaURL %>" />
 		</c:if>
 
-		<aui:button onClick="" type="submit" value="send" />
+		<aui:button onClick="" type="submit" value="save" />
 	</aui:fieldset>
 </aui:form>
 
